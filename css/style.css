@@ -1,0 +1,158 @@
+html{scroll-behavior: smooth;}
+h1,h2,h3,h4,h5,h6{font-family: 'Montserrat Alternates', sans-serif;}
+p,a,li,figcaption{
+  text-decoration: none;
+  font-family: 'Raleway',sans-serif;
+  font-size: 20px;
+}
+header{
+    background-color: #0e0e0e;
+    height: 125px;
+    display: flex;
+    align-items: center;
+  }
+  header div{
+    width: auto;
+    height: 115px;
+    flex-grow: 1;
+  }
+  header div a img{
+    width: auto;
+    height: 100%;
+  }
+  header nav menu{
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  header nav menu li{
+    padding: 0px 10px;
+  }
+  header a:link{
+    color: #f4f4f4;
+  }
+  header a:hover, header a:active, header a:focus, header a:visited{
+    color: #E1341E;
+  }
+  .masthead{
+    
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 85vh;
+    background-image: url("../img/black-trees.png"), url("../img/trees-color.png"), url("../img/mountains.png"), url("../img/clouds.png");
+    background-repeat: no-repeat;
+    background-size: cover, cover, cover, cover;
+    background-position: 70px -85%, 0px 90%, 0px 50%, 0 100%;
+  }
+  .masthead div:nth-child(1){
+    display:flex;
+    align-items: center;
+    padding: 0px 15px;
+    background: rgba(13, 177, 157, 1.0);
+    background: -webkit-linear-gradient(bottom right, rgba(13, 177, 157, .4), rgba(13, 177, 157, .7));
+    background: -moz-linear-gradient(bottom right, rgba(13,177,157, .4), rgba(13,177,157, .7));
+    background: linear-gradient(to top left, rgba(13, 177, 157, .4), rgba(13, 177, 157, .7));
+  }
+  .masthead div:nth-child(1) h1{
+    font-size: 68px;
+    color:#f4f4f4;
+    text-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 1.75px;
+  }
+  #svg-examples{
+    padding: 2% 0%;
+    background-color: #f4511e;
+    clip-path: polygon(0 0,/*left top */ 100% 0,/*right top*/100% 100%, /*right bottom*/ 0 90%/*left bottom*/ );
+  }
+  #svg-examples h3{
+    font-size:38px;
+    text-align: center;
+    color: #f4f4f4;
+    text-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+  }
+  .svg-example-container{
+    padding: 2% 5%;
+    clip-path: polygon(0 0,/* left top*/ 100% 0, /* right top*/ 100% 100%, /*right bottom*/0 90%/*left bottom*/);
+  }
+  #svg-examples h3{
+    font-size: 38px;
+  text-align:center;
+  color:#f4f4f4;
+  text-shadow: 4px 2px 4px rgba(0,0,0,0.5);
+  }
+  .svg-example-container{
+    padding: 2% 5%;
+    clip-path: polygon(0 0,/* left top*/ 100% 0, /* right top*/ 100% 100%, /*right bottom*/0 90%/*left bottom*/ )
+  }
+  .btn-container-1{
+    width: 5%;
+    margin: auto;
+  }
+  .btn-container-1 .btn{
+    color: #fff;
+    font-weight: 400;
+    line-height: 45px;
+    margin: auto;
+    max-width: 0px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  .btn-container-1 .btn:hover{
+    text-decoration: none;
+  }
+  .btn-container-1 .btn-1{
+    font-weight: 100;
+  }
+  .btn-container-1 .btn-1 svg{
+    height: 45px;
+    left: -62px;
+    position: absolute;
+    width: 200px;
+  }
+  .btn-container-1 .btn-1 rect{
+    fill:none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  .btn-container-1 .btn-1:hover{
+    background: rgba(225, 51, 45, 0);
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .btn-container-1 .btn-1:hover rect{
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1s ease-in-out;
+  }
+  /* Drop Shadow*/
+  #drop-shadow{
+    padding: 5% 10%;
+  }
+  #drop-shadow h3{
+    font-size: 38px;
+    text-align: center;
+    color: #0e0e0e;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .ds-example-container{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    text-align: center;
+  }
+  .ds-container img{
+    width: 80%;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+  .cp-container-1 img{
+    width: 80%;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  }
+  .cp-container-2 img{
+    width: 80%;
+    clip-path: circle(40%);
+  }
